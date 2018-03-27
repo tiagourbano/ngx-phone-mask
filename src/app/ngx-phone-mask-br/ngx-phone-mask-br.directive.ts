@@ -96,7 +96,10 @@ export class NgxPhoneMaskBrDirective {
 		const valueWithCursor = value.substring(0, cursorPosition) + '^' + value.substring(cursorPosition);
 
 		const formatted = format(valueWithCursor);
-
+		
+		if (value === '') {
+			return;
+		}
 
 		if (!formatted) {
 			input.value = this.oldValue;
