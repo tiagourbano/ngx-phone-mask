@@ -1,6 +1,6 @@
 {
   "name": "ngx-phone-mask-br",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "ISC",
   "scripts": {
     "ng": "ng",
