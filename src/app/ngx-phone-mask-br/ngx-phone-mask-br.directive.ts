@@ -4,18 +4,17 @@ import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
 const noop = () => { };
 
 const masks = [
-	'1',
-	'1 (1',
-	'1 (11',
-	'1 (111',
-	'1 (111) 1',
-	'1 (111) 11',
-	'1 (111) 11-1',
-	'1 (111) 11-11',
-	'1 (111) 11-111',
-	'1 (111) 111-111',
-	'1 (111) 111-11-11',
-	'1 (111) 111-111-11'
+	'(1',
+    '(11',
+    '(11) 1',
+    '(11) 11',
+    '(11) 111',
+    '(11) 1111',
+    '(11) 1111-1',
+    '(11) 1111-11',
+    '(11) 1111-111',
+    '(11) 1111-1111',
+    '(11) 11111-1111'
 ];
 
 const clean = (number) => {
@@ -60,22 +59,22 @@ const format = (number) => {
 	cursorPosition++; // because of '+'
 
 	return {
-		formatted: `+${formatted}`,
+		formatted: `${formatted}`,
 		cursorPosition
 	}
 }
 
 @Directive({
-	selector: '[ngxPhoneMask]',
+	selector: '[ngxPhoneMaskBr]',
 	providers: [
 		{
 			provide: NG_VALUE_ACCESSOR,
-			useExisting: forwardRef(() => NgxPhoneMaskDirective),
+			useExisting: forwardRef(() => NgxPhoneMaskBrDirective),
 			multi: true
 		}
 	]
 })
-export class NgxPhoneMaskDirective {
+export class NgxPhoneMaskBrDirective {
 
 	private onTouchedCallback: () => void = noop;
 	private onChangeCallback: (_: any) => void = noop;

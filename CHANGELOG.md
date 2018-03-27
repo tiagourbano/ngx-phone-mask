@@ -1,4 +1,4 @@
-# 2.1.0 (08.10.2017)
+# 1.0.0 (03.27.2018)
 
 ###
-Reworked masking functionality, now not using third-party libraries.
+First Version

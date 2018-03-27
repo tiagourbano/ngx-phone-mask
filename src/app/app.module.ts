@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NgxPhoneMaskModule } from './ngx-phone-mask/ngx-phone-mask.module';
+import { NgxPhoneMaskBrModule } from './ngx-phone-mask-br/ngx-phone-mask-br.module';
 
 import { AppComponent } from './app.component';
 
@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    NgxPhoneMaskModule,
+    NgxPhoneMaskBrModule,
     FormsModule, ReactiveFormsModule
   ],
   providers: [],

@@ -1,1 +1,1 @@
-export * from './src/app/ngx-phone-mask/ngx-phone-mask.module';
+export * from './src/app/ngx-phone-mask-br/ngx-phone-mask-br.module';

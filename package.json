@@ -1,6 +1,6 @@
 {
-  "name": "ngx-phone-mask",
-  "version": "2.1.2",
+  "name": "ngx-phone-mask-br",
+  "version": "1.0.0",
   "license": "ISC",
   "scripts": {
     "ng": "ng",
@@ -12,10 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Ledzz/ngx-phone-mask.git"
+    "url": "https://github.com/tiagourbano/ngx-phone-mask-br.git"
   },
   "bugs": {
-    "web": "https://github.com/Ledzz/ngx-phone-mask/issues"
+    "web": "https://github.com/tiagourbano/ngx-phone-mask-br/issues"
   },
   "keywords": [
     "angular",
@@ -28,9 +28,10 @@
     "ng-model",
     "form-control",
     "masking",
-    "international"
+    "brazilian",
+    "brazilian phone number"
   ],
-  "author": "Ledzz",
+  "author": "Urbano",
   "dependencies": {
     "@angular/common": ">=4.0.0",
     "@angular/compiler": ">=4.0.0",
